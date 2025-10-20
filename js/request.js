@@ -4,6 +4,7 @@ class RequestHandler {
         this.backendUrl = 'https://lab6-backend-7pjd.onrender.com';
 
         document.getElementById('submit').onclick = this.sendQuery.bind(this);
+        document.getElementById('postButton').onclick = this.staticQuery.bind(this);
     }
 
     sendQuery() {
