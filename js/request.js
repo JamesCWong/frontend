@@ -1,7 +1,7 @@
 class RequestHandler {
     constructor() {
         //Url for hosting service.
-        this.backendUrl = 'https://asd.onrender.com';
+        this.backendUrl = 'https://lab6-backend-7pjd.onrender.com';
 
         document.getElementById('submit').onclick = this.sendQuery.bind(this);
     }
