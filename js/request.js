@@ -41,10 +41,12 @@ class RequestHandler {
             ('Elon Musk', '1999-01-01');
         `;
 
+        trimQuery = query.trim();
+
         fetch(this.backendUrl + '/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
-            body: JSON.stringify({query})
+            body: JSON.stringify({trimQuery})
         })
         .then(res => res.text())
         //Display the response or error.
