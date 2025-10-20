@@ -41,7 +41,7 @@ class RequestHandler {
             ('Elon Musk', '1999-01-01');
         `;
 
-        trimQuery = query.trim();
+        const trimQuery = query.trim();
 
         fetch(this.backendUrl + '/', {
             method: 'POST',
