@@ -46,7 +46,7 @@ class RequestHandler {
             headers: { 'Content-Type': 'application/json'},
             body: JSON.stringify({query})
         })
-        .then(res = res.text())
+        .then(res => res.text())
         //Display the response or error.
         .then(data =>document.getElementById('presetResponse').textContent = data)
         .catch(err => document.getElementById('response').textContent = err);
