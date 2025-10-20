@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1 id= 'queryHeader'></h1>
+    <textarea id='sql' rows="6" cols="60" placeholder=''></textarea><br>
+    <button id='submit'></button>
+    
+    <pre id='response'></pre>
+
+    <!--Script that initializes the constants for messages-->
+    <script src="lang/messages/en/user.js"></script>
+    <script>
+            document.title = PAGE_TITLE;
+            document.getElementById("queryHeader").innerHTML = QUERY_HEADER;
+            document.getElementById("sql").placeholder = SQL_PLACEHOLDER;
+            document.getElementById("submit").innerHTML = SUBMIT_BUTTON;
+    </script>
+
+    <script src="js/request.js"></script>
+</body>
+</html>
