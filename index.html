@@ -4,6 +4,10 @@
     <title></title>
 </head>
 <body>
+    <h1 id = 'buttonHeader'></h1>
+    <button id='postButton'></button>
+    <div id='presetResponse'></div>
+
     <h1 id= 'queryHeader'></h1>
     <textarea id='sql' rows="6" cols="60" placeholder=''></textarea><br>
     <button id='submit'></button>
@@ -14,6 +18,8 @@
     <script src="lang/messages/en/user.js"></script>
     <script>
             document.title = PAGE_TITLE;
+            document.getElementById('buttonHeader').innerHTML = BUTTON_HEADER;
+            document.getElementById('postButton').innerHTML = PRESET_BUTTON;
             document.getElementById("queryHeader").innerHTML = QUERY_HEADER;
             document.getElementById("sql").placeholder = SQL_PLACEHOLDER;
             document.getElementById("submit").innerHTML = SUBMIT_BUTTON;
